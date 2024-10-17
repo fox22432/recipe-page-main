@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+li {
+    list-style-position: outside;
+    margin: 6px;
+}
+
+
+body {
+    background-color: #F3E5D8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Outfit", serif;
+}
+
+main {
+    background-color: white;
+    width: 735px;
+    margin: 122px 0;
+    border-radius: 25px;
+}
+
+.heroImageContainer {
+    margin: 40px 40px 32px;
+}
+
+.heroImage {
+    width: 100%;
+    border-radius: 12px;
+}
+
+section {
+    color: hsl(30, 10%, 34%);
+    line-height: 1.5;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding-bottom: 22px;
+    margin: 25px 40px;   
+}
+
+section:last-child {
+    border-bottom: none;
+    padding: 0;
+}
+
+.nutrition p {
+    margin-bottom:  12px;
+}
+
+.nutrionEntry {
+    padding: 11px 30px;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.nutrionValue {
+    position: absolute;
+    left: 50.5%;
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+.nutrionEntry:last-child {
+    border-bottom: none;
+}
+
+h1 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-size: 40px;
+    margin-top: 22px 0 16px;
+    color: hsl(24, 5%, 18%);
+}
+
+h2 {
+    color: hsl(14, 45%, 36%);
+    font-family: "Young Serif", serif;
+    font-size: 28px;
+    font-weight: 400;
+    margin: 16px 0;
+}
+
+.preparation {
+    background-color: hsl(330, 100%, 98%);
+    padding: 24px 28px;
+    border-radius: 10px;
+    font-weight: 400;
+    margin-top: 31px 0 24px;
+}
+
+ul, ol {
+    margin: 0 17px;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: square;
+}
+
+.preparation li {
+    margin: 8px;
+}
+
+li::marker {
+    color: hsl(14, 45%, 36%);
+}
+
+ul li::marker {
+    font-size: 12px;
+}
+
+li > span {
+    position: relative;
+    left: 15px
+}
+
+ol > li::marker {
+    font-weight: bold;
+    font-family: "Outfit";
+}
+
+.preparation li::marker {
+    color: hsl(332, 51%, 32%);
+}
+
+.preparation h3 {
+    color: hsl(332, 51%, 32%);
+    font-size: 20px;
+}
+
+@media screen and (max-width: 720px) {
+    .heroImageContainer {
+        margin: 0;
+        margin-bottom: 40px;
+    }
+
+    .heroImage {
+        border-radius: 0;
+    }
+
+    main {
+        margin: 0;
+        width: 375px;
+    }
+
+
+    ol {
+        line-height: 1.5;
+    }
+
+    h1 {
+        font-size: 36px;
+        line-height: 1;
+        margin: 24px 0;
+    }
+
+    section {
+        margin: 32px;
+        margin-right: 25px;
+    }
+
+}
